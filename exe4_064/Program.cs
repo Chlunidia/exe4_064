@@ -40,5 +40,9 @@ namespace StackUsingArray
                 return ele[top--];
             }
         }
+        public void display()
+        {
+           
+        }
     }
 }
