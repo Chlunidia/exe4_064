@@ -29,7 +29,16 @@ namespace StackUsingArray
         }
         public int pop()
         {
-
+            if (top == -1)
+            {
+                Console.WriteLine("Stack underflow.");
+                return -1;
+            }
+            else
+            {
+                Console.WriteLine("Poped element is: " + ele[top]);
+                return ele[top--];
+            }
         }
     }
 }
