@@ -60,7 +60,7 @@ namespace StackUsingArray
     {
         static void Main(string[] args)
         {
-
+            Stacks s = new Stacks(750);
         }
     }
 }
