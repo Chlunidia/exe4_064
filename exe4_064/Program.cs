@@ -5,9 +5,14 @@ namespace StackUsingArray
     // Create  class Stacks
     class Stacks
     {
-        // Create variable ele, top, max
         private int[] ele;
         private int top;
         private int max;
+        public Stacks(int size)
+        {
+            ele = new int[size];
+            top = -1;
+            max = size;
+        }
     }
 }
