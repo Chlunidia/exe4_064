@@ -14,5 +14,9 @@ namespace StackUsingArray
             top = -1;
             max = size;
         }
+        public void push()
+        {
+            
+        }
     }
 }
