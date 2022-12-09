@@ -1,21 +1,25 @@
 ﻿using System;
-// Create Stack Using Array
+// Create Stack Using Array.
 namespace StackUsingArray
 {
-    // Create  class Stacks
+    // Create  class Stacks.
     class Stacks
     {
+        // Create variable ele, top, max.
         private int[] ele;
         private int top;
         private int max;
+        // Create method Stacks.
         public Stacks(int size)
         {
             ele = new int[size];
             top = -1;
             max = size;
         }
+        // Create method push to allocate memory.
         public void push(int item)
         {
+            // Check if the stack is full.
             if (top == max - 1)
             {
                 Console.WriteLine("Stack overflow.");
@@ -23,12 +27,15 @@ namespace StackUsingArray
             }
             else
             {
+                // Print data that was successfully entered.
                 Console.WriteLine("\n" + item + " pushed into stack.");
                 ele[++top] = item;
             }
         }
+        // Create method pop. This is utility function to pop element from the stack. Remove at the beginning.
         public int pop()
         {
+            // Check for stack underflow.
             if (top == -1)
             {
                 Console.WriteLine("Stack underflow.");
@@ -36,12 +43,14 @@ namespace StackUsingArray
             }
             else
             {
-                Console.WriteLine("Poped element is: " + ele[top]);
+                // Print data that was successfully deleted.
+                Console.WriteLine("\nPoped element is: " + ele[top]);
                 return ele[top--];
             }
         }
         public void display()
         {
+            // Check for empty stack. 
             if (top == -1)
             {
                 Console.WriteLine("Stack is empty.");
@@ -51,11 +60,13 @@ namespace StackUsingArray
             {
                 for (int luni = 0; luni <= top; luni++)
                 {
+                    // Print entered data.
                     Console.WriteLine("Item [" + (luni + 1) + "]: " + ele[luni]);
                 }
             }
         }
     }
+    // Create class Program to display menu.
     class Program
     {
         static void Main(string[] args)
