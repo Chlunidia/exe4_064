@@ -27,5 +27,9 @@ namespace StackUsingArray
                 ele[++top] = item;
             }
         }
+        public int pop()
+        {
+
+        }
     }
 }
