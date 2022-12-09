@@ -56,4 +56,8 @@ namespace StackUsingArray
             }
         }
     }
+    class Program
+    {
+        
+    }
 }
