@@ -12,9 +12,9 @@ namespace StackUsingArray
         // Create method Stacks.
         public Stacks(int size)
         {
-            ele = new int[size];
+            ele = new int[750];
             top = -1;
-            max = size;
+            max = 750;
         }
         // Create method push to allocate memory.
         public void push(int item)
