@@ -49,9 +49,9 @@ namespace StackUsingArray
             }
             else
             {
-                for (int i = 0; i <= top; i++)
+                for (int luni = 0; luni <= top; luni++)
                 {
-                    Console.WriteLine("Item [" + (i + 1) + "]: " + ele[i]);
+                    Console.WriteLine("Item [" + (luni + 1) + "]: " + ele[luni]);
                 }
             }
         }
