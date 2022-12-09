@@ -58,6 +58,9 @@ namespace StackUsingArray
     }
     class Program
     {
-        
+        static void Main(string[] args)
+        {
+
+        }
     }
 }
